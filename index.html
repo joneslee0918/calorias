@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Title</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Calories Calc Section -->
+    <section>
+      <!-- Container -->
+      <div class="container">
+        <div class="type-heading">
+          <img src="assets/img/calorie-calculator.png" alt="" />
+          <h3>¿Cuántas calorías diarias necesita tu cuerpo?</h3>
+        </div>
+        <!-- Type Box -->
+        <div id="query" class="type-box type-box-content">
+          <div class="test-sleep-box-content">
+            <p class="first-p">
+              La edad, el peso, la altura y la actividad física son claves para
+              definir una dieta sana. Ingresá tus datos para obtener un estimado
+              de las calorías que tu cuerpo necesita.
+            </p>
+            <div class="calories-calc-wrp">
+              <h2>Calculador de calorías</h2>
+              <div class="calories-sel-calc">
+                <div class="common-calc-item calories-calc-itm">
+                  <label>Sexo</label>
+                  <select id="sex_option" class="calc-select calories-select">
+                    <!-- <option value="0" data-display="Seleccionar">Seleccionar</option> -->
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
+                  </select>
+                </div>
+                <div class="common-calc-item calories-calc-itm">
+                  <label>Edad</label>
+                  <input id="age_option" type="number" class="nice-select calc-select calories-select" min="0"/>
+                </div>
+                <div class="common-calc-item calories-calc-itm">
+                  <label>Peso</label>
+                  <input id="weight_option" type="number" class="nice-select calc-select calories-select" min="0"/>
+                </div>
+                <div class="common-calc-item calories-calc-itm">
+                  <label>Altura</label>
+                  <input id="height_option" type="number" class="nice-select calc-select calories-select" min="0"/>
+                </div>
+              </div>
+
+              <h4>Cantidad de ejercicio semanal</h4>
+
+              <div class="calories-checkbox">
+                <div class="calories-check">
+                  <input type="radio" id="check1" name="activity_option" value="1" checked />
+                  <label for="check1">Sin ejercicio</label>
+                </div>
+                <div class="calories-check">
+                  <input type="radio" id="check2" value="2" name="activity_option" />
+                  <label for="check2">1 - 2 días a la semana</label>
+                </div>
+                <div class="calories-check">
+                  <input type="radio" id="check3" value="3" name="activity_option" />
+                  <label for="check3">3 - 4 días a la semana</label>
+                </div>
+                <div class="calories-check">
+                  <input type="radio" id="check4" value="4" name="activity_option" />
+                  <label for="check4">5 - 6 días a la semana</label>
+                </div>
+                <div class="calories-check">
+                  <input type="radio" id="check5" value="5" name="activity_option" />
+                  <label for="check5">6 - 7 días a la semana</label>
+                </div>
+              </div>
+
+              <button id="calculate" class="btn calc-btn">Calcular</button>
+            </div>
+          </div>
+        </div>
+        <div id="answer" class="type-box type-box-content display-none">
+          <div class="test-sleep-box-content">
+            <div class="text-center">
+              <span class="h4 font-SSB d-block my-3 text-center">Tu cuerpo necesita:</span>
+              <p class="h1 mys-4 font-SSB"><span id="cal_value" class="font-SSB "></span> kcal.</p>
+              <span class="h3 font-SSB d-block weight-600">por día</span>
+              <button id="recalculate" class="btn calc-btn">Calcular nuevamente</button>
+            </div>
+            <div class="text-left">
+              <p class="h4 font-SSB mt-5 mb-3 text-left">
+                ¿Qué significa este dato?
+              </p>
+              <p class="p-sm text-left">
+                Las calorías son las sustancias encargadas de aportar energía al organismo. Éstas se miden mediante una unidad denominada caloría. Cuando se consume un producto, el cuerpo absorbe y metaboliza los nutrientes. Es en este proceso donde se obtiene la energia.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- End -->
+
+      </div>
+      <!-- End Container -->
+    </section>
+    <!-- End Calories Calc -->
+
+    <!-- All Script -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
