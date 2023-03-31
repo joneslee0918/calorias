@@ -17,7 +17,7 @@ function calculateCalories(sex, age, weight, height, activityLevel) {
   // calculate basal metabolic rate (BMR)
   const bmr = bmrConstant + (weightConstant * weight) + (heightConstant * height) - (age * ageConstant);
   // assign activity level multiplier based on selection
-  let activityMultiplier = 0;
+  let activityMultiplier = 1.2;
   switch(activityLevel) {
     case "1":
       activ1ityMultiplier = 1.2;
