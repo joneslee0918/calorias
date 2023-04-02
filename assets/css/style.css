@@ -66,7 +66,6 @@
 
 :root {
   --white: #ffffff;
-  --light-grey: #cacaca;
   --blue: #4c84b7;
 }
 
@@ -485,6 +484,87 @@ a.btn {
   line-height: 22px;
   color: var(--light-grey);
   width: 100%;
+}
+.calc-select.nice-border {
+  border-radius:50px 0px 0px 50px !important;
+  padding-right:10px !important;
+  width: 80%;
+}
+
+@media (min-width: 614px) {
+  .display-inline {
+    display: inline-block;
+    height:42px;
+    padding: 7px 2px 0px 2px;
+    border:solid 1px #e8e8e8;
+    border-radius: 0px 50px 50px 0px;
+  }
+}
+@media (min-width: 767px) {  
+  .display-inline {
+    display: inline-block;
+    height:55px;
+    padding: 13px 4px 0px 4px;
+    border:solid 1px #e8e8e8;
+    border-radius: 0px 50px 50px 0px;
+  }
+}
+@media (max-width: 614px) {
+  .display-inline {
+    display: inline-block;
+    height:42px;
+    padding: 7px 2px 0px 2px;
+    border:solid 1px #e8e8e8;
+    border-radius: 0px 50px 50px 0px;
+  }
+}
+@media (max-width: 576px) {
+  .display-inline {
+    display: inline-block;
+    height:42px;
+    padding: 7px 0px 0px 0px;
+    border:solid 1px #e8e8e8;
+    border-radius: 0px 50px 50px 0px;
+  }
+}
+@media (max-width: 516px) {
+  .display-inline {
+    display: inline-block;
+    height:42px;
+    padding: 7px 0px 0px 0px;
+    border:solid 1px #e8e8e8;
+    border-radius: 0px 50px 50px 0px;
+  }
+}
+@media (max-width: 490px) {
+  .display-inline {
+    display: inline-block;
+    height:42px;
+    padding: 7px 5px 0px 5px;
+    border:solid 1px #e8e8e8;
+    border-radius: 0px 50px 50px 0px;
+  }
+}
+@media (max-width: 412px) {
+  .display-inline {
+    display: inline-block;
+    height:42px;
+    padding: 7px 5px 0px 5px;
+    border:solid 1px #e8e8e8;
+    border-radius: 0px 50px 50px 0px;
+  }
+}
+@media (max-width: 360px) {
+  .display-inline {
+    display: inline-block;
+    height:42px;
+    padding: 7px 0px 0px 0px;
+    border:solid 1px #e8e8e8;
+    border-radius: 0px 50px 50px 0px;
+  }
+}
+.age-font {
+  font-size:19px
 }
 .calc-select.nice-select:active,
 .calc-select.nice-select:focus {
